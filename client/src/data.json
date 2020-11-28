@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "_id": "shirt1",
+      "title": "EWA x Vuori Energy Tank",
+      "image": "/images/EWA_womens_small.png",
+      "description": "Ultrasoft performance top with high neck and slight crop",
+      "price": 45,
+      "availableSizes": ["XS", "SM", "MD", "LG", "XL"]
+    },
+    {
+      "_id": "shirt2",
+      "title": "EWA x Vuori Strato Top",
+      "image": "/images/EWA_mens.png",
+      "description": "Soft performance knit for exercise or leisure",
+      "price": 45,
+      "availableSizes": ["SM", "MD", "LG", "XL", "XXL"]
+    }
+  ]
+}
