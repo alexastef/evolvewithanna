@@ -8,7 +8,6 @@ import Zoom from "react-reveal/Zoom";
 function Cart(props) {
   const { cartItems } = props;
 
-  const [shipping, setShipping] = useState(8)
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
 
@@ -26,7 +25,7 @@ function Cart(props) {
 
   function handleToken (token) {
     const product = cartItems;
-    const amount =  (cartItems.reduce((a, c) => a + c.price * c.count, 0)+shipping) * 100
+    const amount =  cartItems.reduce((a, c) => a + c.price * c.count, 0) * 100
     console.log(token);
     const body = {
       token,
@@ -103,7 +102,6 @@ function Cart(props) {
                   cartItems.reduce((a, c) => a + c.price * c.count, 0)
                 )}
                 </p>
-                <p>Shipping: {" "}{formatCurrency(shipping)}</p>
               </div>
               <StripeCheckout
                 stripeKey="pk_live_51Hqno3CUbxqSHspvOsqElOMwVgisyi6Q1mGz1HmODE2PN9TqQffNB6mxZO6fJhJilfRgYY2La7PEBXhxrffxh7PC00o9Gt044q"
@@ -113,7 +111,7 @@ function Cart(props) {
                 billingAddress={true}
                 product={cartItems}
                 amount={
-                  (cartItems.reduce((a, c) => a + c.price * c.count, 0)+shipping) * 100}>
+                  cartItems.reduce((a, c) => a + c.price * c.count, 0) * 100}>
                   <button className="button button primary">Checkout</button>
                 </StripeCheckout>
             </div>
