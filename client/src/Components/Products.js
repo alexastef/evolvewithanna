@@ -87,7 +87,7 @@ function Products(props) {
                 <p>
                   ${productPrice}
                 </p>
-                <button className="button primary" onClick={() => {
+                <button className="button primary add-to-cart" onClick={() => {
                   props.addToCart(cartProduct);
                   closeModal();
                 }}>Add to Cart</button>

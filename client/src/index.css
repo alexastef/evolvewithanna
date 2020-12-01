@@ -86,6 +86,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0;
+  padding-left: 3rem;
   margin: 0;
   margin-top: 1rem;
   list-style-type: none;
@@ -148,6 +149,25 @@ footer {
 
 .product-price button {
   max-width: 33%;
+}
+
+/*about */
+.about-section {
+  padding: 3rem;
+  justify-content: center;
+  /* padding-right: 2rem; */
+  text-align: center;
+}
+
+.about {
+  padding: 30px;
+}
+
+.ways-to-donate {
+  text-align: center;
+  margin-top: 30px;
+  color: #8fa79e;
+  font-weight: bold;
 }
 
 /* cart */
@@ -248,4 +268,52 @@ input {
   right: 1rem;
   top: 2.5rem;
   z-index: 1000;
+}
+
+/* Checkout Modal */
+.checkout-modal {
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.thankyou-photo {
+  max-height: 60vh;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+@media (max-width: 400px) {
+  .products {
+    padding: 0;
+  }
+  .products li {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .product-details img { 
+    width: 100%;
+  }
+
+  .product-details button {
+    margin-top: 5px;
+  }
+
+  .product-price div,
+  .product-price button {
+    width: 100%;
+  }
+  .product-price button {
+    max-width: 60%;
+  }
 }
