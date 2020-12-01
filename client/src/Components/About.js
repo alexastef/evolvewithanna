@@ -19,7 +19,7 @@ export default function About() {
       <p><strong>XO Ash and Alexa</strong></p>
       </div>
       <div className="ways-to-donate">
-      <p>Other ways to donate: <a href="www.gofundme.com/f/27a437rzqo/widget/large/"></a>GoFundMe</p>
+      <p>To donate more, please search Anna Spalding on the GoFundMe website.</p>
       <p>To keep updated: <a href="https://www.caringbridge.org/visit/annaspalding">Caring Bridge</a></p>
         
       </div>
