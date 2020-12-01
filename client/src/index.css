@@ -99,14 +99,21 @@ footer {
   flex: 1 20rem;
 }
 
+.image-section {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
 /* products */
-.products {
+ul.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
-  padding-left: 3rem;
   margin: 0;
   margin-top: 1rem;
   list-style-type: none;
@@ -165,10 +172,12 @@ footer {
   border: .1rem #c0c0c0 solid;
   background-color: #f0f0f0;
   cursor: pointer;
+  margin-top: 5px;
 }
 .button:hover {
   border: 0.1rem #888888 solid;
 }
+
 .button.primary {
   background-color: #f2c729;
   border-radius: 8px;
@@ -177,19 +186,33 @@ footer {
 
 .product-price button {
   max-width: 33%;
+  margin-bottom: 5px;
 }
 
 /*about */
 .about-section {
   padding: 3rem;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center;
+  text-align: center; */
 }
 
 .about {
   padding-bottom: 10px;
 }
 
+.about p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about h3 {
+  color: #8fa79e;
+}
+
+#xo {
+  text-align: right;
+  padding-top: 10px;
+}
 .ways-to-donate {
   text-align: center;
   margin-top: 30px;
@@ -301,20 +324,72 @@ input {
   z-index: 1000;
 }
 
+.product-modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  outline: none;
+  padding: 20px;
+  margin: auto;
+  max-width: 60%;
+  height: 40rem;
+
+}
+
 /* Checkout Modal */
 .checkout-modal {
   padding: 15px;
   text-align: center;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.checkout-modal-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  outline: none;
+  /* padding: 20px; */
+  margin: auto;
+  max-height: 60vh;
+  width: 60%; 
+  text-align: center;
+  justify-content: center;
+
 }
 
 .thankyou-photo {
-  max-height: 60vh;
+  width: 48%;
   margin: 0 auto;
-  padding-top: 45px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 415px) {
+  .about-section {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about p {
+    padding: 0px;
+  }
+
+  #xo {
+    text-align: center;
+  }
   .products {
     padding: 0;
   }
@@ -336,10 +411,6 @@ input {
     width: 100%;
   }
 
-  .product-details button {
-    margin-top: 5px;
-  }
-
   .product-price div,
   .product-price button {
     width: 100%;
@@ -347,4 +418,29 @@ input {
   .product-price button {
     max-width: 60%;
   }
+  .product-modal {
+    max-width: 98%;
+    height: 85vh;
+  }
+
+  .checkout-modal-wrapper {
+    max-height: 75vh;
+    width: 85%;
+    margin-left: -10px;
+  }
+
+  .thankyou-photo {
+    width: 100%;
+  }
 }
+
+@media (max-width: 850px) {
+  .product-modal {
+    max-width: 98%;
+  }
+  .checkout-wrapper-modal {
+    width: 98%;
+    max-height: 50vh;
+  }
+}
+

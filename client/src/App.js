@@ -2,6 +2,7 @@ import React from "react";
 import data from "./data.json";
 import Products from "./Components/Products";
 import About from "./Components/About";
+import Logo from "./Components/Logo";
 import Cart from "./Components/Cart";
 import { Link } from "react-scroll";
 
@@ -88,6 +89,7 @@ class App extends React.Component {
                 ></Products>
               </div>
               <div className="sidebar">
+                <Logo />
                 <Cart
                   cartItems={this.state.cartItems}
                   size={this.state.size}

@@ -46,7 +46,7 @@ function Products(props) {
   }
 
   return (
-    <div>
+    <div className="product-wrapper">
       <Fade bottom cascade>
         <ul className="products">
           {props.products.map((product) => (
@@ -70,7 +70,7 @@ function Products(props) {
           ))}
         </ul>
       </Fade>
-        <Modal isOpen={showModal} onRequestClose={closeModal}>
+        <Modal isOpen={showModal} onRequestClose={closeModal} className="product-modal">
         <Zoom>
           <button className="close-modal" onClick={closeModal}>x</button>
           <div className="product-details">
@@ -83,7 +83,7 @@ function Products(props) {
                 <span> { " " } <button className="button" id={size} onClick={(evt) => setCartItems(evt)}>{size}</button></span>)
                 )}     
               </p>
-              <div className="product-price">
+              <div className="product-details-price">
                 <p>
                   ${productPrice}
                 </p>

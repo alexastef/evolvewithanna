@@ -53,7 +53,7 @@ function Cart(props) {
   }
 
   return (
-    <>
+    <div>
       <div>
         {cartItems.length === 0 ? (
           <div className="cart cart-header">Cart is empty</div>
@@ -116,28 +116,29 @@ function Cart(props) {
                 </StripeCheckout>
             </div>
           </div>
-          <Modal isOpen={showSuccess} onRequestClose={closeSuccessModal}>
+          <Modal isOpen={showSuccess} onRequestClose={closeSuccessModal} className="checkout-modal-wrapper">
             <Zoom>
-              <h4 className="checkout-modal">
+              <h5 className="checkout-modal">
                 Thank you for your purchase! Anna and Chris appreciate your support and can't wait to see everyone rocking their tees.
-              </h4>
-              <h4 className="checkout-modal">
+              </h5>
+              <h5 className="checkout-modal">
                 You can expect to receive your shirt in 3-4 weeks. Please reach out if you have any questions!
+              </h5>
+              <div className="checkout-modal">
                 <img src="https://i.imgur.com/k0xxxom.jpg" className="thankyou-photo" alt="Chris & Anna Thank You!" />
-
-              </h4>
+              </div>
             </Zoom>
           </Modal>
           <Modal isOpen={showError} onRequestClose={closeErrorModal}>
             <Zoom>
               <h4 className="checkout-modal">
-                Oops, something went wrong. Try placing your order again later.
+                Oops, something went wrong! Try placing your order again later or reach out to Ashleigh or Alexa.
               </h4>
             </Zoom>
           </Modal>
         </>
       )}
-    </>
+    </div>
   );
 }
 
