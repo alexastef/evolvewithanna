@@ -36,7 +36,7 @@ function Cart(props) {
       "Content-Type": "application/json"
     }
 
-    return fetch(`https://evolvewithanna.com/payment`, {
+    return fetch(`https://www.evolvewithanna.com/payment`, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body)
