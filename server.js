@@ -3,7 +3,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 require("dotenv").config({ path: "./.env" });
 const path = require("path");
-const stripe = require('stripe')(process.env.STRIPE_SECRET_TEST);
+const stripe = require('stripe')(process.env.STRIPE_SECRET);
 const { v4: uuidv4 } = require("uuid");
 const mongoose = require("mongoose");
 

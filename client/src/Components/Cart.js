@@ -104,7 +104,7 @@ function Cart(props) {
                 </p>
               </div>
               <StripeCheckout
-                stripeKey="pk_test_51Hqno3CUbxqSHspvtJFJ7XYSpm1CfaCU5sjo24bJCeKZ1uWNOXQlzaEfrMGiHGdBAPzf4J5KuRrfdMTwektSgy15009hCPZZGq"
+                stripeKey="pk_live_51Hqno3CUbxqSHspvOsqElOMwVgisyi6Q1mGz1HmODE2PN9TqQffNB6mxZO6fJhJilfRgYY2La7PEBXhxrffxh7PC00o9Gt044q"
                 token={handleToken}
                 description="Evolve With Anna x Vuori"
                 shippingAddress={true}
