@@ -105,7 +105,7 @@ app.post("/payment", cors(), async (req, res) => {
       },
       items_ordered: product
     };
-    const insertOrder = await Order(customer_order).save();
+    const insertOrder = await Order(customer_order).save().then(() => console.log("order inserted successfully")).catch((err) => console.log(err));
 
   } catch (error) {
     console.log("ERROR", error);
