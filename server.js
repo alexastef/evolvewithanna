@@ -11,6 +11,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
+// serve static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
@@ -46,7 +47,7 @@ app.use(bodyParser.json());
 
 // routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "client/build"));
 });
 
 app.post("/payment", cors(), async (req, res) => {
