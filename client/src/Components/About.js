@@ -6,6 +6,7 @@ export default function About() {
     <div className="about-section">
       <Fade bottom cascade>
       <div className="about">
+        <h4>Welcome, Kula, to Evolve with Anna</h4>
         <p>
         This is a 2 week fundraising campaign created for Anna with Community and Support at the forefront of our minds.
       </p> 
