@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "production") {
 
 // database
 mongoose.connect(
-  process.env.MONGODB_URL || "mongodb://localhost/ewa-orders",
+  process.env.MONGODB_URI || "mongodb://localhost/ewa-orders",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
