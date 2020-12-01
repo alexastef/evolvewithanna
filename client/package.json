@@ -21,6 +21,7 @@
     "react-modal": "^3.12.1",
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.1",
     "react-stripe": "^0.1.0",
     "react-stripe-checkout": "^2.6.3",
     "react-toastify": "^6.1.0",

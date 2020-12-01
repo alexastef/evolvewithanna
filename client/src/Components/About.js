@@ -19,9 +19,9 @@ export default function About() {
       <p><strong>XO Ash and Alexa</strong></p>
       </div>
       <div className="ways-to-donate">
-      <p>To donate more, please search Anna Spalding on the GoFundMe website.</p>
       <p>To keep updated: <a href="https://www.caringbridge.org/visit/annaspalding">Caring Bridge</a></p>
-        
+      <p>For monetary or other donations, please search Anna Spalding on GoFundMe or reach out directly to Ashleigh at copas5983@gmail.com</p>
+      <p>Shop more from Vuori <a href="https://www.vuoriclothing.com">here!</a></p>
       </div>
       </Fade>
     </div>

@@ -3,6 +3,8 @@ import data from "./data.json";
 import Products from "./Components/Products";
 import About from "./Components/About";
 import Cart from "./Components/Cart";
+import { Link } from "react-scroll";
+
 
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
@@ -61,9 +63,19 @@ class App extends React.Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="/">
-            <strong>Welcome, Kula, to Evolve with Anna</strong>
-          </a>
+          <Link to="about-section"
+            className="header-left"
+            activeClass="active"
+            spy={true}
+            smooth={true}>
+            <strong><span className="welcome">Welcome, Kula, to Evolve with Anna</span></strong>
+          </Link>
+          <Link 
+            to="cart"
+            className="header-right"
+            activeClass="active"
+            spy={true}
+            smooth={true}><i className="fas fa-shopping-cart fa-lg" /></Link>
         </header>
         <Elements stripe={stripePromise}>
           <main>
