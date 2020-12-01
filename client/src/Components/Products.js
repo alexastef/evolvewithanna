@@ -46,7 +46,7 @@ function Products(props) {
   }
 
   return (
-    <div>
+    <div className="product-wrapper">
       <Fade bottom cascade>
         <ul className="products">
           {props.products.map((product) => (

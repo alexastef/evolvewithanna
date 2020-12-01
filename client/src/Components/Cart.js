@@ -132,7 +132,7 @@ function Cart(props) {
           <Modal isOpen={showError} onRequestClose={closeErrorModal}>
             <Zoom>
               <h4 className="checkout-modal">
-                Oops, something went wrong. Try placing your order again later.
+                Oops, something went wrong! Try placing your order again later or reach out to Ashleigh or Alexa.
               </h4>
             </Zoom>
           </Modal>

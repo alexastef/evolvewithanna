@@ -99,6 +99,14 @@ footer {
   flex: 1 20rem;
 }
 
+.image-section {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
 /* products */
 ul.products {
   display: flex;
@@ -184,14 +192,27 @@ ul.products {
 /*about */
 .about-section {
   padding: 3rem;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center;
+  text-align: center; */
 }
 
 .about {
   padding-bottom: 10px;
 }
 
+.about p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about h3 {
+  color: #8fa79e;
+}
+
+#xo {
+  text-align: right;
+  padding-top: 10px;
+}
 .ways-to-donate {
   text-align: center;
   margin-top: 30px;
@@ -357,6 +378,18 @@ input {
 }
 
 @media (max-width: 415px) {
+  .about-section {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about p {
+    padding: 0px;
+  }
+
+  #xo {
+    text-align: center;
+  }
   .products {
     padding: 0;
   }

@@ -6,7 +6,8 @@ export default function About() {
     <div className="about-section">
       <Fade bottom cascade>
       <div className="about">
-        <h4>Welcome, Kula, to Evolve with Anna</h4>
+        <h3><center>Welcome, Kula, to Evolve with Anna</center></h3>
+        <div className="about-body">
         <p>
         This is a 2 week fundraising campaign created for Anna with Community and Support at the forefront of our minds.
       </p> 
@@ -16,8 +17,10 @@ export default function About() {
       <p>
         Please share this page so we can reach family, friends, and students both near and far. Vuroi has generously donated their product and we hope to see you around town sporting your Evolve with Anna gear. All proceeds will go directly to Chris and Anna to help with medical expenses. If you do not wish to buy a shirt, monetary donations are also appreciated. Thank you in advance!
       </p>
+      
 
-      <p><strong>XO Ash and Alexa</strong></p>
+      <p id="xo"><strong>XO Ash and Alexa</strong></p>
+      </div>
       </div>
       <div className="ways-to-donate">
       <p>To keep updated: <a href="https://www.caringbridge.org/visit/annaspalding">Caring Bridge</a></p>
