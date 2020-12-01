@@ -68,7 +68,7 @@ class App extends React.Component {
             activeClass="active"
             spy={true}
             smooth={true}>
-            <strong><span className="welcome">Welcome, Kula, to Evolve with Anna</span></strong>
+            <strong><span className="welcome">Evolve with Anna</span></strong>
           </Link>
           <Link 
             to="cart"
@@ -81,11 +81,11 @@ class App extends React.Component {
           <main>
             <div className="content">
               <div className="main">
+                <About />
                 <Products
                   products={this.state.products}
                   addToCart={this.addToCart}
                 ></Products>
-                <About />
               </div>
               <div className="sidebar">
                 <Cart
