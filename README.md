@@ -8,13 +8,13 @@ As of me writing this, about one week after our launch of the site, we've alread
 Please visit this site and read more about the cause here: https://www.evolvewithanna.com
 
 ## Table of Contents
-- Demo
-- Prerequisites
-- Installation
-- Usage
-- Author
-- Contributing
-- Credits
+- [Demo]
+- [Prerequisites]
+- [Installation]
+- [Usage]
+- [Author]
+- [Contributing]
+- [Credits]
 
 ## Demo
 Below is a test purchase going through. It also shows animation, localStorage, and desktop view. The website works seamlessly on mobile too.
