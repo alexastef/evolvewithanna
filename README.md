@@ -21,7 +21,7 @@ Below is a test purchase going through. It also shows animation, localStorage, a
 
 ![Evolve with Anna Demo](https://media.giphy.com/media/07jMkxJvthrXNqf0Ch/giphy.gif)
 
-There's also a modal for if a payment doesn't work but it's not as pretty :)
+There's also a modal for if a payment doesn't work but it's not as pretty and is hopefully never seen :)
 
 ## Prerequisites
 Should you want to create your own eCommerce app that functions similar to this one, you'll need to have the following installed or ready to go:
