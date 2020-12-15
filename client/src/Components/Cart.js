@@ -23,12 +23,14 @@ function Cart(props) {
     setShowError(false);
   }
 
-  function handleToken (token) {
+  function handleToken (token, shippingAddress) {
     const product = cartItems;
     const amount =  cartItems.reduce((a, c) => a + c.price * c.count, 0) * 100
     console.log(token);
+    console.log(shippingAddress);
     const body = {
       token,
+      shippingAddress,
       product,
       amount
     }
@@ -36,7 +38,7 @@ function Cart(props) {
       "Content-Type": "application/json"
     }
 
-    return fetch(`https://www.evolvewithanna.com/payment`, {
+    return fetch(`http://localhost:3001/payment`, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body)
