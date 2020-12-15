@@ -59,7 +59,7 @@ function Products(props) {
                 <div className="product-price">
                   <p>{formatCurrency(product.price)}</p>
                   <button
-                    className="button primary"
+                    className="button primary select-size"
                     onClick={() => openModal(product)}
                   >
                     Select Size
@@ -80,7 +80,7 @@ function Products(props) {
               <p>{showProduct.description}</p>
               <p>
                 {availableSizes.map((size) => (
-                <span> { " " } <button className="button" id={size} onClick={(evt) => setCartItems(evt)}>{size}</button></span>)
+                <span> { " " } <button className="button size-button" id={size} onClick={(evt) => setCartItems(evt)}>{size}</button></span>)
                 )}     
               </p>
               <div className="product-details-price">
