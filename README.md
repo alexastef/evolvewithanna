@@ -8,20 +8,20 @@ As of me writing this, about one week after our launch of the site, we've alread
 Please visit this site and read more about the cause here: https://www.evolvewithanna.com
 
 ## Table of Contents
-- Demo
-- Prerequisites
-- Installation
-- Usage
-- Author
-- Contributing
-- Credits
+- [Demo](#demo)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Author](#author)
+- [Contributing](#contributing)
+- [Credits](#credits)
 
 ## Demo
 Below is a test purchase going through. It also shows animation, localStorage, and desktop view. The website works seamlessly on mobile too.
 
 ![Evolve with Anna Demo](https://media.giphy.com/media/07jMkxJvthrXNqf0Ch/giphy.gif)
 
-There's also a modal for if a payment doesn't work but it's not as pretty :)
+There's also a modal for if a payment doesn't work but it's not as pretty and is hopefully never seen :)
 
 ## Prerequisites
 Should you want to create your own eCommerce app that functions similar to this one, you'll need to have the following installed or ready to go:

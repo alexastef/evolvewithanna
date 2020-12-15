@@ -55,7 +55,7 @@ app.post("/payment", cors(), async (req, res) => {
   let error;
   let status;
   try {
-    const { amount, product, token } = req.body;
+    const { amount, product, token, shippingAddress } = req.body;
 
     const customer = await stripe.customers.create({
       email: token.email,
@@ -73,12 +73,12 @@ app.post("/payment", cors(), async (req, res) => {
       shipping: {
         name: token.card.name,
         address: {
-          line1: token.card.address_line1,
-          line2: token.card.address_line2,
-          city: token.card.address_city,
-          state: token.card.address_state,
-          country: token.card.address_country,
-          postal_code: token.card.address_zip
+          line1: shippingAddress.shipping_address_line1,
+          line2: shippingAddress.shipping_address_line2,
+          city: shippingAddress.shipping_address_city,
+          state: shippingAddress.shipping_address_state,
+          country: shippingAddress.shipping_address_country,
+          postal_code: shippingAddress.shipping_address_zip
         }
       },
       metadata: {
@@ -106,6 +106,7 @@ app.post("/payment", cors(), async (req, res) => {
       items_ordered: product
     };
     const insertOrder = await Order(customer_order).save().then(() => console.log("order inserted successfully")).catch((err) => console.log(err));
+    console.log(customer_order);
 
   } catch (error) {
     console.log("ERROR", error);
