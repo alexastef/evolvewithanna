@@ -416,7 +416,7 @@ input {
 
   button.select-size {
     padding: 1px;
-    border: 0.1rem # solid;
+    border: 0.1rem #888888 solid;
   }
 
   button.size-button {
