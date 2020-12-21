@@ -3,8 +3,10 @@ import data from "./data.json";
 import Products from "./Components/Products";
 import About from "./Components/About";
 import Logo from "./Components/Logo";
-import Cart from "./Components/Cart";
+// import Cart from "./Components/Cart";
 import { Link } from "react-scroll";
+import Zoom from "react-reveal/Zoom";
+import Modal from "react-modal";
 
 
 import { loadStripe } from "@stripe/stripe-js";
@@ -23,7 +25,12 @@ class App extends React.Component {
         : [],
       size: "",
       count: 0,
+      showModal: true
     };
+  }
+
+  closeModal = () => {
+    this.setState({ showModal: false })
   }
 
   createOrder = (order) => {
@@ -64,19 +71,26 @@ class App extends React.Component {
     return (
       <div className="grid-container">
         <header>
-          <Link to="about-section"
+          <Link
+            to="about-section"
             className="header-left"
             activeClass="active"
             spy={true}
-            smooth={true}>
-            <strong><span className="welcome">Evolve with Anna</span></strong>
+            smooth={true}
+          >
+            <strong>
+              <span className="welcome">Evolve with Anna</span>
+            </strong>
           </Link>
-          <Link 
+          <Link
             to="cart"
             className="header-right"
             activeClass="active"
             spy={true}
-            smooth={true}><i className="fas fa-shopping-cart fa-lg" /></Link>
+            smooth={true}
+          >
+            <i className="fas fa-shopping-cart fa-lg" />
+          </Link>
         </header>
         <Elements stripe={stripePromise}>
           <main>
@@ -87,15 +101,43 @@ class App extends React.Component {
                   products={this.state.products}
                   addToCart={this.addToCart}
                 ></Products>
+                <Modal
+                  isOpen={this.state.showModal}
+                  onRequestClose={this.closeModal}
+                  className="home-modal-wrapper"
+                >
+                  <Zoom>
+                    <div className="modal-text">
+                      <p>
+                        Hi there! The Evolve With Anna x Vuori t-shirt campaign ended Friday 12/18. We are no longer taking orders, but feel free to read about Anna's story and view the shirt offerings.
+                      </p>
+                      <p>
+                        If you are still interested in purchasing a shirt, would like to use the logo, or have any other questions, please reach out to Ashleigh or Alexa.
+                      </p>
+                      <p>
+                        <ul>
+                          <li className="email">copas5983@gmail.com</li>
+                          <li className="email">alexa.c.stef@gmail.com</li>
+                        </ul>
+                      </p>
+                      <img
+                        src="https://i.imgur.com/k0xxxom.jpg"
+                        className="thankyou-photo"
+                        alt="Chris & Anna Thank You!"
+                      />
+                      <p>Thank you all so much for your love and support!</p>
+                    </div>
+                  </Zoom>
+                </Modal>
               </div>
               <div className="sidebar">
                 <Logo />
-                <Cart
+                {/* <Cart
                   cartItems={this.state.cartItems}
                   size={this.state.size}
                   removeFromCart={this.removeFromCart}
                   createOrder={this.createOrder}
-                />
+                /> */}
               </div>
             </div>
           </main>
