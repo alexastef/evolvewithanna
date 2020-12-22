@@ -46,8 +46,11 @@ function Cart(props) {
       const { status } = response;
       console.log("STATUS: ", status);
  
-      setShowSuccess(true);
-
+      if (status === "200") {
+        setShowSuccess(true);
+      } else {
+        setShowError(true);
+      }
     }).catch(err => { 
       console.log(err);
       setShowError(true)
