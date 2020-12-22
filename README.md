@@ -3,7 +3,7 @@ Full stack eCommerce web application built to help raise funds for a friend batt
 
 This site was built for a two-week fundraiser, so if you happen upon this in the future, I apologize if some features are no longer working. I do plan to fork this repo and build upon it as a side project. In addition to the website design and management, I also designed the logo.
 
-The site was open from 12/1/2020 to 12/18/2020, selling nearly 200 shirts and raising $8,000 for our dear friend. All of the proceeds were donated to help pay for her radiation treatment.
+The site was open from 12/1/2020 to 12/18/2020, selling around 200 shirts and raising $8,000 for our dear friend. All of the proceeds were donated to help pay for her radiation treatment.
 
 Please visit this site and read more about the cause here: https://www.evolvewithanna.com
 
